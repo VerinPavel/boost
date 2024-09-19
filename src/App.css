@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  max-width: 100vw;
+}
+
+body {
+  justify-content: center;
+}
+
+@font-face {
+  font-family: "Measure";
+  src: local("Measure"), url(./assets/fonts/Measure/Measure.otf);
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy"), url(./assets/fonts/Gilroy/Gilroy-Regular.ttf);
+}
+
+.firstPart {
+  /* min-height: 2018px; */
+  background-image: url(../img/backgorundFirst.png);
+  background-size: cover;
+  padding-bottom: 100px;
+
+  @media (max-width: 1919px) {
+    background-image: unset;
+  }
+}
+
+.secondPart {
+  background-image: url(../img/backgorundSecond.png);
+  background-size: cover;
+}

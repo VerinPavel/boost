@@ -1,0 +1,77 @@
+.ThirdSlider {
+  overflow: hidden;
+  padding-top: 5px;
+  margin-bottom: 100px;
+}
+
+.titleWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 76px;
+
+  @media (max-width: 1919px) and (min-width: 1024px) {
+    padding: 130px 0;
+    gap: 25px;
+    margin-bottom: 90px;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  @media (max-width: 1023px) and (min-width: 0px) {
+    padding: 50px 0;
+    gap: 10px;
+    margin-bottom: 30px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.bacgroundColor {
+  @media (max-width: 1919px) and (min-width: 0px) {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../public/img/banner/banner.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.title {
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Measure;
+
+  @media (max-width: 1919px) and (min-width: 1024px) {
+    color: #ffffff;
+    font-size: 60px;
+  }
+  @media (max-width: 1023px) and (min-width: 0px) {
+    color: #ffffff;
+    font-size: 24px;
+  }
+}
+
+.subtitle {
+  font-size: 18px;
+  text-align: center;
+  font-family: Gilroy;
+
+  @media (max-width: 1919px) and (min-width: 1024px) {
+    color: #ffffff;
+    font-size: 36px;
+    max-width: 633px;
+    br {
+      display: none;
+    }
+  }
+  @media (max-width: 1023px) and (min-width: 0px) {
+    color: #ffffff;
+    font-size: 14px;
+    max-width: 243px;
+    br {
+      display: none;
+    }
+  }
+}

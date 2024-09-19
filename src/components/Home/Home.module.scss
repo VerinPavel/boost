@@ -1,0 +1,254 @@
+.home {
+  display: flex;
+  margin: 0 auto 72px auto;
+  padding: 168px 21.355% 0 21.355%;
+
+  @media (max-width: 1023px) and (min-width: 0px) {
+    padding: 34px 25px 0 25px;
+    background-image: url(../img/backgorundSecond.png);
+    background-size: cover;
+  }
+  @media (max-width: 1919px) and (min-width: 1024px) {
+    padding: 78.45px 126px 0 126px;
+    background-image: url(../img/backgorundSecond.png);
+    background-size: cover;
+  }
+
+  ul {
+    display: flex;
+    gap: 52px;
+  }
+
+  li {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 41px;
+    font-weight: 400;
+    font-family: Gilroy;
+
+    @media (max-width: 1919px) and (min-width: 1024px) {
+      font-size: 68px;
+      text-wrap: wrap;
+    }
+  }
+  li:not(:last-child) {
+    padding-right: 28px;
+    border-right: 1px solid #000000;
+  }
+}
+
+.valuesWrap {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  @media (max-width: 1023px) and (min-width: 0px) {
+    padding-top: 30px;
+    gap: 30px;
+  }
+}
+
+.valueTitle {
+  font-family: Measure;
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (max-width: 1023px) and (min-width: 0px) {
+    font-size: 24px;
+  }
+}
+
+.valueWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  @media (max-width: 1023px) and (min-width: 0px) {
+    gap: 14px;
+    padding: 0 22px;
+  }
+}
+
+.firtLine {
+  display: flex;
+  gap: 36px;
+
+  @media (max-width: 1023px) and (min-width: 0px) {
+    gap: 19px;
+  }
+
+  p {
+    font-family: Measure;
+    font-size: 66px;
+    text-transform: uppercase;
+    height: 50px;
+
+    @media (max-width: 1023px) and (min-width: 0px) {
+      font-size: 36px;
+      height: fit-content;
+    }
+  }
+}
+
+.secondLine {
+  display: flex;
+  gap: 36px;
+
+  @media (max-width: 1023px) and (min-width: 0px) {
+    gap: 19px;
+  }
+
+  p {
+    font-family: Measure;
+    font-size: 66px;
+    text-transform: uppercase;
+    height: 50px;
+
+    @media (max-width: 1023px) and (min-width: 0px) {
+      font-size: 36px;
+      height: fit-content;
+    }
+  }
+}
+
+.pLine {
+  border-right: 1.5px solid #000000;
+  padding-right: 36px;
+
+  @media (max-width: 1023px) and (min-width: 0px) {
+    padding-right: 19px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  // @media (max-width: 1919px) and (min-width: 1024px) {
+  //   align-items: center;
+  // }
+}
+
+.title {
+  font-size: 90px;
+  font-weight: 400;
+  line-height: 90px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #000000;
+  text-wrap: nowrap;
+  font-family: Measure;
+
+  @media (max-width: 1919px) and (min-width: 1024px) {
+    font-size: 98px;
+    line-height: 98px;
+    text-align: center;
+  }
+  @media (max-width: 1023px) and (min-width: 0px) {
+    font-size: 52px;
+    line-height: 52px;
+    text-align: center;
+  }
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  margin-bottom: 50px;
+  color: #000000;
+  font-family: Gilroy;
+
+  @media (max-width: 1919px) and (min-width: 1024px) {
+    text-align: center;
+    br {
+      display: none;
+    }
+  }
+  @media (max-width: 1023px) and (min-width: 0px) {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    br {
+      display: none;
+    }
+  }
+}
+
+.cardsWrap {
+  display: flex;
+  gap: 64px;
+  margin-bottom: 70px;
+
+  @media (max-width: 1023px) and (min-width: 0px) {
+    gap: 17px;
+    margin-bottom: 30px;
+  }
+}
+
+.cardWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 196px;
+
+  @media (max-width: 1919px) and (min-width: 1024px) {
+    text-align: center;
+    align-items: center;
+  }
+  @media (max-width: 1023px) and (min-width: 0px) {
+    text-align: center;
+    align-items: center;
+    width: auto;
+  }
+}
+
+.img {
+  margin-bottom: 30px;
+  height: 50px;
+}
+
+.cardTitle {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #000000;
+  text-align: start;
+  text-wrap: nowrap;
+  font-family: Measure;
+}
+
+.cardSubtitle {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+  color: #000000;
+  text-align: start;
+  font-family: Gilroy;
+
+  @media (max-width: 1919px) and (min-width: 1024px) {
+    text-align: center;
+  }
+  @media (max-width: 1023px) and (min-width: 0px) {
+    text-align: center;
+  }
+}
+
+.projects {
+  width: 50%;
+  height: 50%;
+}
+
+.photo {
+  position: relative;
+
+  img {
+    position: absolute;
+  }
+}

@@ -1,0 +1,37 @@
+.burger {
+  svg {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../../img/banner/banner.jpg);
+  background-size: cover;
+  z-index: 0;
+
+  nav {
+    ul {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      li {
+        a {
+          font-family: Measure;
+          font-size: 40px;
+          color: #ffffffff;
+        }
+      }
+    }
+  }
+}

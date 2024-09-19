@@ -1,0 +1,44 @@
+.footer {
+  padding: 0 21.355% 40px 21.355%;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.nav {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 0;
+
+  li {
+    list-style-type: none;
+  }
+  li:not(:last-child) {
+    padding-right: 28px;
+    border-right: 1px solid #000000;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000000;
+    font-family: Gilroy;
+    font-size: 16px;
+  }
+}
+
+.down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: gliroy;
+  color: #444444;
+}

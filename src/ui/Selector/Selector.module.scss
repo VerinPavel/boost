@@ -1,0 +1,39 @@
+.select {
+  width: 100%;
+  padding: 6.5px 11.5px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.selectedOption {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-family: Gilroy;
+}
+
+.options {
+  margin-top: 5px;
+  padding-top: 10px;
+  border-top: 1px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+  font-family: Gilroy;
+}
+
+.option {
+  font-size: 18px;
+  font-family: Gilroy;
+  &:hover {
+    cursor: pointer;
+    color: #ffb700;
+    background-color: #414141;
+  }
+}

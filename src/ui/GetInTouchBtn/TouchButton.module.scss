@@ -1,0 +1,21 @@
+.btn {
+  border: 0;
+  border-radius: 11px;
+  font-family: Gilroy;
+  padding: 22px 45px;
+  font-size: 20px;
+  transition: transform 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  @media (max-width: 1023px) and (min-width: 0px) {
+    padding: 14px 24px;
+    font-size: 14px;
+  }
+  @media (max-width: 1919px) and (min-width: 1024px) {
+    padding: 36px 64px;
+  }
+}

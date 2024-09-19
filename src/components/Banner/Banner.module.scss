@@ -1,0 +1,88 @@
+.banner {
+  background-image: url(./img/banner/banner.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.backgroundColor {
+  display: flex;
+  align-items: center;
+  padding: 66px 21.355% 44px 21.355%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  @media (max-width: 1023px) and (min-width: 0px) {
+    gap: 23px;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 50px 21.355% 50px 21.355%;
+  }
+  @media (max-width: 1919px) and (min-width: 1024px) {
+    flex-direction: column-reverse;
+    gap: 74px;
+    align-items: center;
+    padding: 132px 21.355% 132px 21.355%;
+  }
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+  width: 466px;
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #f3f3f3;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: Measure;
+  }
+}
+
+.infoWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 64px;
+  @media (max-width: 1023px) and (min-width: 0px) {
+    gap: 28px;
+    align-items: center;
+  }
+  @media (max-width: 1919px) and (min-width: 1024px) {
+    gap: 74px;
+    align-items: center;
+  }
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 800px;
+  color: #ffffff;
+  font-family: Gilroy;
+
+  @media (max-width: 1023px) and (min-width: 0px) {
+    font-size: 24px;
+    text-align: center;
+  }
+  @media (max-width: 1919px) and (min-width: 1024px) {
+    font-size: 60px;
+    text-align: center;
+  }
+}
+
+.brand {
+  width: 408px;
+  height: 172px;
+  @media (max-width: 1023px) and (min-width: 0px) {
+    width: 130px;
+    height: 54px;
+  }
+  @media (max-width: 1919px) and (min-width: 1024px) {
+    height: 143px;
+    width: 342px;
+  }
+}
