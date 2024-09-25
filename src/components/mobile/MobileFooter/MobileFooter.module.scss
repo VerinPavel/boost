@@ -1,8 +1,8 @@
 .mobileFooter {
-  padding: 0 135px;
+  padding: 60px 135px;
 
   @media (max-width: 1023px) {
-    padding: 0 46px;
+    padding: 20px 46px;
   }
 }
 
@@ -36,9 +36,12 @@ ul {
   justify-content: center;
   gap: 25px;
   padding: 40px 0;
-  border: 2px solid #ffb700;
   border-left: 0;
   border-right: 0;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  -webkit-border-image: url("../../../public/img/backgroundText.jpg");
+  border-image: url("../../../public/img/backgroundText.jpg") 30 repeat;
 
   @media (max-width: 1023px) {
     padding: 20px 0;
@@ -64,8 +67,10 @@ ul {
   justify-content: center;
   gap: 25px;
   padding: 40px 0;
-  border-bottom: 2px solid #ffb700;
   margin-bottom: 40px;
+  border-bottom: 2px solid transparent;
+  -webkit-border-image: url("../../../public/img/backgroundText.jpg");
+  border-image: url("../../../public/img/backgroundText.jpg") 30 repeat;
 
   @media (max-width: 1023px) {
     padding: 20px 0;

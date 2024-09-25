@@ -1,4 +1,6 @@
 .select {
+  position: relative;
+  max-width: 281px;
   width: 100%;
   padding: 6.5px 11.5px;
   border: 1px solid #ffffff;
@@ -17,10 +19,20 @@
   font-family: Gilroy;
 }
 
+.openSvg {
+  transform: rotate(180deg);
+}
+
 .options {
+  position: absolute;
+  left: -1px;
+  width: 100%;
+  max-width: 281px;
   margin-top: 5px;
-  padding-top: 10px;
-  border-top: 1px solid #ffffff;
+  padding: 10px 11.5px 5px;
+  border: 1px solid #ffffff;
+  border-top: 0;
+  border-radius: 0 0 5px 5px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -34,6 +46,6 @@
   &:hover {
     cursor: pointer;
     color: #ffb700;
-    background-color: #414141;
+    // background-color: #414141;
   }
 }

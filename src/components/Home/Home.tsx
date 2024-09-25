@@ -1,16 +1,25 @@
 import Line from "../../ui/Line/Line.tsx";
 import { useMediaQuery } from "@react-hook/media-query";
 import styles from "./Home.module.scss";
-import { cards } from "./data.ts";
+import { cards, cardsMobile } from "./data.ts";
 import { CardProps } from "./data.ts";
 
 export default function Home() {
-  const Desktop = useMediaQuery("(min-width: 1920px)");
+  const Desktop = useMediaQuery("(min-width: 1280px)");
+
+  const data = () => {
+    if (!Desktop) {
+      return cardsMobile;
+    } else return cards;
+  };
+
+  const array = data();
   return (
     <section id="home" className={styles.home}>
       <div className={styles.info}>
         <p className={styles.title}>
-          Your partner <br /> in creating and <br /> growing brands
+          <span>Your partner </span>
+          <br /> in creating and <br /> growing brands
         </p>
         <p className={styles.subtitle}>
           We provide unique services in the field of branding of igaming,
@@ -20,7 +29,7 @@ export default function Home() {
           an unforgettable digital experience.
         </p>
         <div className={styles.cardsWrap}>
-          {cards?.map((card: CardProps) => {
+          {array?.map((card: CardProps) => {
             return (
               <div className={styles.cardWrap} key={card.id}>
                 <img className={styles.img} src={card.img} alt={card.alt} />
@@ -38,9 +47,13 @@ export default function Home() {
         <div>
           {Desktop ? (
             <ul>
-              <li>partnership</li>
+              <li>
+                <span>partnership</span>
+              </li>
               <li>transparency</li>
-              <li>respect</li>
+              <li>
+                <span>respect</span>
+              </li>
               <li>focus</li>
             </ul>
           ) : (
@@ -48,13 +61,17 @@ export default function Home() {
               <p className={styles.valueTitle}>Our values:</p>
               <div className={styles.valueWrap}>
                 <div className={styles.firtLine}>
-                  <p className={styles.pLine}>partnership</p>
+                  <p className={styles.pLine}>
+                    <span>partnership</span>
+                  </p>
                   <p>respect</p>
                 </div>
                 <Line height="1.5px" />
                 <div className={styles.secondLine}>
                   <p className={styles.pLine}>focus</p>
-                  <p>transparency</p>
+                  <p>
+                    <span>transparency</span>
+                  </p>
                 </div>
               </div>
             </div>

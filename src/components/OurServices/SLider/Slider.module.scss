@@ -1,0 +1,59 @@
+.slider {
+  display: flex;
+  gap: 21px;
+}
+
+.active {
+  display: flex;
+  gap: 21px;
+
+  @media (max-width: 1023px) and (min-width: 0) {
+    flex-direction: column;
+
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 480px;
+    }
+  }
+
+  .smallimg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width: 1023px) and (min-width: 0) {
+      flex-direction: row;
+
+      img {
+        width: 160px;
+        height: 200px;
+      }
+    }
+  }
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.inactive {
+  display: none;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.slider > div {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.slider > div.active {
+  opacity: 1;
+}
+
+.slider.transitioning > div {
+  transition: transform 0.5s, opacity 0.5s;
+}

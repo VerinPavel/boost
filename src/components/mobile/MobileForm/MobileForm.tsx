@@ -7,7 +7,11 @@ type CheckboxState = {
   [key: number]: boolean;
 };
 
-export default function MobileForm() {
+interface MobileForm {
+  setIsOpenModal: (isOpen: boolean) => void;
+}
+
+export default function MobileForm({ setIsOpenModal }: MobileForm) {
   const [checkboxes, setCheckboxes] = useState<CheckboxState>({});
 
   const handleCheckboxChange = (id: number) => {
@@ -35,13 +39,13 @@ export default function MobileForm() {
             d="M1 4.99023H20.6869L18.1467 7.34904H3.17736V67.317H31.2108L29.1242 69.4036H1V4.99023Z"
             fill="black"
             stroke="black"
-            stroke-width="0.793462"
+            strokeWidth="0.793462"
           />
           <path
             d="M71.4009 69.3125H50.9882L53.347 66.9537H69.2236L69.2236 6.98572L41.1901 6.98572L43.2768 4.89909H71.4009L71.4009 69.3125Z"
             fill="black"
             stroke="black"
-            stroke-width="0.793462"
+            strokeWidth="0.793462"
           />
           <path
             d="M80.294 36.4255V19.0588H87.2841C90.6437 19.0588 92.8111 20.7385 92.8111 23.6646C92.8111 25.534 91.7545 27.0242 90.1289 27.6202C92.1338 28.0266 93.2717 29.6793 93.2717 31.7113C93.2717 34.7458 90.9146 36.4255 87.3654 36.4255H80.294ZM83.3285 26.6178H86.8506C88.693 26.6178 89.7496 25.6695 89.7496 24.1794C89.7496 22.5267 88.6388 21.6597 86.8777 21.6597H83.3285V26.6178ZM83.3285 33.8246H87.0674C89.0723 33.8246 90.2102 32.9576 90.2102 31.3862C90.2102 29.7335 89.0723 28.8936 87.257 28.8936H83.3285V33.8246ZM101.874 27.4035H104.909C107.13 27.4035 108.322 26.401 108.322 24.5316C108.322 22.6351 107.049 21.7681 104.855 21.7681H101.061V36.4255H97.9999V19.0588H105.369C109.189 19.0588 111.547 20.8469 111.547 24.2065C111.547 27.1325 109.677 28.8936 106.778 29.2458L112.007 36.4255H108.268L101.874 27.4035ZM114.599 36.4255L122.402 18.842H124.624L132.454 36.4255H129.067L127.631 33.0931H119.313L117.877 36.4255H114.599ZM123.513 23.4208L120.424 30.5463H126.547L123.513 23.4208ZM136.296 36.4255V18.9504H138.571L148.542 30.8985V19.0588H151.549V36.5339H149.436L139.33 24.6129V36.4255H136.296ZM157.468 36.4255V19.0588H163.184C169.253 19.0588 172.586 22.4183 172.586 27.7286C172.586 33.066 169.253 36.4255 163.184 36.4255H157.468ZM162.859 21.8494H160.529V33.6349H162.859C167.221 33.6349 169.334 31.5217 169.334 27.7286C169.334 23.9626 167.221 21.8494 162.859 21.8494Z"
@@ -66,7 +70,7 @@ export default function MobileForm() {
       <div className={styles.btnWrap}>
         <MobileFormBtn text="Write to Us" color="#FFFFFF" backcolor="#262626" />
       </div>
-      <form className={styles.form}>
+      <div className={styles.form}>
         <div className={styles.name}>
           <p className={styles.fullName}>Full Name</p>
           <input className={styles.input} type="text" placeholder="Type here" />
@@ -113,9 +117,14 @@ export default function MobileForm() {
           <p className={styles.fullName}>Email</p>
           <input className={styles.input} type="text" placeholder="Type here" />
         </div>
-
-        <MobileFormBtn text="Submit" color="#FFFFFF" backcolor="#262626" />
-      </form>
+      </div>
+      <MobileFormBtn
+        handleClick={setIsOpenModal}
+        text="Submit"
+        color="#FFFFFF"
+        backcolor="#262626"
+        role="button"
+      />
     </section>
   );
 }

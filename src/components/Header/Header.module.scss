@@ -1,25 +1,45 @@
 .header {
-  display: flex;
-  align-items: center;
-  gap: 67px;
-  padding: 50px 21.355% 0 21.355%;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
   background-image: unset;
   background-position: center;
 
   @media (max-width: 1023px) and (min-width: 0px) {
-    padding: 47px 22px 25px 22px;
     background-image: url(../../../img/banner/banner.jpg);
     background-size: cover;
-    justify-content: space-between;
   }
-  @media (max-width: 1919px) and (min-width: 1024px) {
+  @media (max-width: 1279px) and (min-width: 1024px) {
     background-image: url(../../../img/banner/banner.jpg);
     background-size: cover;
     background-position: center;
-    padding: 43px 85px 22px 85px;
-    gap: 0;
+  }
+}
+
+.bacgroundImg {
+  display: flex;
+  align-items: center;
+  padding: 50px 21.355% 0 21.355%;
+  justify-content: space-between;
+
+  @media (max-width: 1919px) and (min-width: 1280px) {
+    padding: 50px 128px 0;
+  }
+  @media (max-width: 1023px) and (min-width: 0px) {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 47px 22px 25px 22px;
     justify-content: space-between;
   }
+  @media (max-width: 1279px) and (min-width: 1024px) {
+    gap: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: space-between;
+    padding: 43px 85px 22px 85px;
+  }
+}
+
+.scroll {
+  scroll-behavior: smooth;
 }
 
 .logo {
@@ -28,7 +48,7 @@
       width: 86px;
       height: 36px;
     }
-    @media (max-width: 1919px) and (min-width: 1024px) {
+    @media (max-width: 1279px) and (min-width: 1024px) {
       width: 124px;
       height: 52px;
     }
@@ -65,5 +85,14 @@
     @media (max-width: 1910px) {
       font-size: 14px;
     }
+  }
+
+  a:hover {
+    padding-top: 5px;
+    color: transparent;
+    background-image: url("../../../public/img/backgroundText.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }

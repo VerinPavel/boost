@@ -15,7 +15,7 @@ const slidesMobile = [
 ];
 
 const Slider = () => {
-  const Desktop = useMediaQuery("(min-width: 1920px)");
+  const Desktop = useMediaQuery("(min-width: 1279px)");
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {

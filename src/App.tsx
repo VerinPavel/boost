@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
-// import OurServices from "./components/OurServices/OurServices";
+import OurServices from "./components/OurServices/OurServices";
 import Banner from "./components/Banner/Banner";
 import SecondSlider from "./components/SecondSlider/SecondSlider";
 import ThirdSlider from "./components/ThirdSlider/ThirdSlider";
@@ -11,20 +11,36 @@ import Footer from "./components/Footer/Footer";
 import MobileFooter from "./components/mobile/MobileFooter/MobileFooter";
 
 import { useMediaQuery } from "@react-hook/media-query";
+import { useState } from "react";
+import Modal from "./components/Modal/Modal";
+
 function App() {
-  const Desktop = useMediaQuery("(min-width: 1920px)");
+  const Desktop = useMediaQuery("(min-width: 1280px)");
+
+  const [isOpenModal, setIsOpenModal] = useState(false);
+
   return (
     <>
       <div className="firstPart">
         <Header />
         <Home />
-        {/* <OurServices /> */}
+        <OurServices />
       </div>
       <Banner />
       <div className="secondPart">
         <SecondSlider />
         <ThirdSlider />
-        {Desktop ? <Form /> : <MobileForm />}
+        {Desktop ? (
+          <Form setIsOpenModal={setIsOpenModal} />
+        ) : (
+          <MobileForm setIsOpenModal={setIsOpenModal} />
+        )}
+        {isOpenModal ? (
+          <Modal
+            isOpenModal={isOpenModal}
+            handleClose={() => setIsOpenModal(false)}
+          />
+        ) : null}
         {Desktop ? <Footer /> : <MobileFooter />}
       </div>
     </>

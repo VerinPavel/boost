@@ -1,5 +1,9 @@
 .footer {
   padding: 0 21.355% 40px 21.355%;
+
+  @media (max-width: 1919px) and (min-width: 1280px) {
+    padding: 40px 128px;
+  }
 }
 
 .top {
@@ -27,6 +31,14 @@
     color: #000000;
     font-family: Gilroy;
     font-size: 16px;
+  }
+  a:hover {
+    padding-top: 5px;
+    color: transparent;
+    background-image: url("../../../public/img/backgroundText.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 

@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   padding: 66px 21.355% 44px 21.355%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
 
   @media (max-width: 1023px) and (min-width: 0px) {
     gap: 23px;
@@ -15,7 +15,7 @@
     align-items: center;
     padding: 50px 21.355% 50px 21.355%;
   }
-  @media (max-width: 1919px) and (min-width: 1024px) {
+  @media (max-width: 1279px) and (min-width: 1024px) {
     flex-direction: column-reverse;
     gap: 74px;
     align-items: center;
@@ -52,7 +52,7 @@
     gap: 28px;
     align-items: center;
   }
-  @media (max-width: 1919px) and (min-width: 1024px) {
+  @media (max-width: 1279px) and (min-width: 1024px) {
     gap: 74px;
     align-items: center;
   }
@@ -64,11 +64,20 @@
   color: #ffffff;
   font-family: Gilroy;
 
+  span {
+    padding-top: 5px;
+    color: transparent;
+    background-image: url("../../../public/img/backgroundText.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   @media (max-width: 1023px) and (min-width: 0px) {
     font-size: 24px;
     text-align: center;
   }
-  @media (max-width: 1919px) and (min-width: 1024px) {
+  @media (max-width: 1279px) and (min-width: 1024px) {
     font-size: 60px;
     text-align: center;
   }
@@ -81,7 +90,7 @@
     width: 130px;
     height: 54px;
   }
-  @media (max-width: 1919px) and (min-width: 1024px) {
+  @media (max-width: 1279px) and (min-width: 1024px) {
     height: 143px;
     width: 342px;
   }

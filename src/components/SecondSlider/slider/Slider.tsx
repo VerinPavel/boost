@@ -54,8 +54,8 @@ const desc = [
 ];
 
 const Slider = () => {
-  const Desktop = useMediaQuery("(min-width: 1920px)");
-  const Tablet = useMediaQuery("(min-width: 1023px) and (max-width: 1919px)");
+  const Desktop = useMediaQuery("(min-width: 1279px)");
+  const Tablet = useMediaQuery("(min-width: 1023px) and (max-width: 1279px)");
   const Mobile = useMediaQuery("(max-width: 1023px)");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [descIndex, setDescIndex] = useState(0);

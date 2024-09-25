@@ -3,7 +3,7 @@ import TouchButton from "../../ui/GetInTouchBtn/TouchButton";
 import styles from "./Banner.module.scss";
 
 export default function Banner() {
-  const Desktop = useMediaQuery("(min-width: 1920px)");
+  const Desktop = useMediaQuery("(min-width: 1280px)");
 
   return (
     <section className={styles.banner}>
@@ -29,7 +29,7 @@ export default function Banner() {
           ) : null}
           <p className={styles.title}>
             Let's work together,
-            <br /> just drop us a line - info@brandboost.com
+            <br /> just drop us a line - <span>info@brandboost.com</span>
           </p>
           <TouchButton color="black" backcolor="#FFFFFF" text="Get in Touch" />
         </div>
@@ -81,7 +81,7 @@ export default function Banner() {
             d="M191.205 136.07V95.6754H207.616C215.504 95.6754 220.593 99.5826 220.593 106.389C220.593 110.737 218.112 114.203 214.295 115.589C219.003 116.534 221.674 120.379 221.674 125.105C221.674 132.163 216.14 136.07 207.807 136.07H191.205ZM198.329 113.258H206.599C210.924 113.258 213.405 111.052 213.405 107.586C213.405 103.742 210.797 101.725 206.662 101.725H198.329V113.258ZM198.329 130.02H207.107C211.815 130.02 214.486 128.004 214.486 124.349C214.486 120.505 211.815 118.551 207.553 118.551H198.329V130.02Z"
             fill="url(#paint9_linear_16_99)"
           />
-          <g clip-path="url(#clip0_16_99)">
+          <g clipPath="url(#clip0_16_99)">
             <path
               d="M69.6548 171.55C70.8866 170.242 71.5948 169.441 72.3339 168.686C90.1941 150.903 108.054 133.135 125.899 115.337C133.397 107.854 134.629 97.9847 129.209 89.5319C122.481 79.0313 107.408 77.3684 98.6161 86.16C95.198 89.578 91.7645 92.9961 88.3465 96.4296C80.6327 104.159 81.0022 114.798 89.2087 121.911C89.4242 122.096 89.609 122.342 89.84 122.573C85.1132 127.254 80.4479 131.857 75.7827 136.477C69.3315 131.981 66.0674 125.714 62.5415 110.749C59.0619 110.749 55.459 111.056 51.9178 110.702C33.8882 108.824 19.3845 94.1201 17.1058 76.0443C15.3967 62.526 20.0619 51.4403 29.3462 42.0483C42.7413 28.4992 56.2905 15.1194 69.855 1.72426C70.748 0.846649 72.2261 0.107605 73.4578 0.0922086C81.8336 -0.046362 90.2095 0.0152249 98.5853 0.0306217C98.7855 0.0306217 99.001 0.123002 99.5861 0.276969C98.2774 1.61649 97.138 2.81743 95.9832 3.97219C78.508 21.3705 61.0173 38.7688 43.5574 56.1825C36.4595 63.265 34.9198 72.5031 39.3541 80.8327C45.3126 92.0415 61.5715 94.5512 70.5632 85.6519C74.1199 82.1414 77.6303 78.6002 81.1562 75.0589C89.0855 67.1142 88.2849 55.8284 79.3394 49.0692C79.0468 48.8383 78.7697 48.5919 78.3694 48.2532C82.8652 43.3108 87.2841 38.4455 91.8415 33.4415C100.926 40.3855 105.591 49.5003 106.653 60.8169C110.148 60.8169 113.52 60.5706 116.846 60.8631C136.754 62.6184 152.197 79.7703 152.474 99.7707C152.628 111.672 148.317 121.418 140.018 129.656C126.561 143.036 113.12 156.431 99.6939 169.857C98.4621 171.088 97.1996 171.673 95.4444 171.643C87.6844 171.566 79.9244 171.596 72.1645 171.581C71.5794 171.581 70.9943 171.581 69.6702 171.581L69.6548 171.55Z"
               fill="url(#paint10_linear_16_99)"
@@ -104,11 +104,11 @@ export default function Banner() {
               y2="108.383"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#BC8A34" />
-              <stop offset="0.243458" stop-color="#CBA35B" />
-              <stop offset="0.517049" stop-color="#FFF9E0" />
-              <stop offset="0.719473" stop-color="#EED294" />
-              <stop offset="1" stop-color="#EAC77F" />
+              <stop stopColor="#BC8A34" />
+              <stop offset="0.243458" stopColor="#CBA35B" />
+              <stop offset="0.517049" stopColor="#FFF9E0" />
+              <stop offset="0.719473" stopColor="#EED294" />
+              <stop offset="1" stopColor="#EAC77F" />
             </linearGradient>
             <linearGradient
               id="paint1_linear_16_99"
@@ -118,11 +118,11 @@ export default function Banner() {
               y2="108.383"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#BC8A34" />
-              <stop offset="0.243458" stop-color="#CBA35B" />
-              <stop offset="0.517049" stop-color="#FFF9E0" />
-              <stop offset="0.719473" stop-color="#EED294" />
-              <stop offset="1" stop-color="#EAC77F" />
+              <stop stopColor="#BC8A34" />
+              <stop offset="0.243458" stopColor="#CBA35B" />
+              <stop offset="0.517049" stopColor="#FFF9E0" />
+              <stop offset="0.719473" stopColor="#EED294" />
+              <stop offset="1" stopColor="#EAC77F" />
             </linearGradient>
             <linearGradient
               id="paint2_linear_16_99"
@@ -132,11 +132,11 @@ export default function Banner() {
               y2="108.383"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#BC8A34" />
-              <stop offset="0.243458" stop-color="#CBA35B" />
-              <stop offset="0.517049" stop-color="#FFF9E0" />
-              <stop offset="0.719473" stop-color="#EED294" />
-              <stop offset="1" stop-color="#EAC77F" />
+              <stop stopColor="#BC8A34" />
+              <stop offset="0.243458" stopColor="#CBA35B" />
+              <stop offset="0.517049" stopColor="#FFF9E0" />
+              <stop offset="0.719473" stopColor="#EED294" />
+              <stop offset="1" stopColor="#EAC77F" />
             </linearGradient>
             <linearGradient
               id="paint3_linear_16_99"
@@ -146,11 +146,11 @@ export default function Banner() {
               y2="108.383"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#BC8A34" />
-              <stop offset="0.243458" stop-color="#CBA35B" />
-              <stop offset="0.517049" stop-color="#FFF9E0" />
-              <stop offset="0.719473" stop-color="#EED294" />
-              <stop offset="1" stop-color="#EAC77F" />
+              <stop stopColor="#BC8A34" />
+              <stop offset="0.243458" stopColor="#CBA35B" />
+              <stop offset="0.517049" stopColor="#FFF9E0" />
+              <stop offset="0.719473" stopColor="#EED294" />
+              <stop offset="1" stopColor="#EAC77F" />
             </linearGradient>
             <linearGradient
               id="paint4_linear_16_99"
@@ -160,11 +160,11 @@ export default function Banner() {
               y2="108.383"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#BC8A34" />
-              <stop offset="0.243458" stop-color="#CBA35B" />
-              <stop offset="0.517049" stop-color="#FFF9E0" />
-              <stop offset="0.719473" stop-color="#EED294" />
-              <stop offset="1" stop-color="#EAC77F" />
+              <stop stopColor="#BC8A34" />
+              <stop offset="0.243458" stopColor="#CBA35B" />
+              <stop offset="0.517049" stopColor="#FFF9E0" />
+              <stop offset="0.719473" stopColor="#EED294" />
+              <stop offset="1" stopColor="#EAC77F" />
             </linearGradient>
             <linearGradient
               id="paint5_linear_16_99"
@@ -174,11 +174,11 @@ export default function Banner() {
               y2="142.665"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="white" />
-              <stop offset="0.135368" stop-color="#A2A2A2" />
-              <stop offset="0.42" stop-color="#F4F4F7" />
-              <stop offset="0.72" stop-color="#A2A2A2" />
-              <stop offset="1" stop-color="white" />
+              <stop stopColor="white" />
+              <stop offset="0.135368" stopColor="#A2A2A2" />
+              <stop offset="0.42" stopColor="#F4F4F7" />
+              <stop offset="0.72" stopColor="#A2A2A2" />
+              <stop offset="1" stopColor="white" />
             </linearGradient>
             <linearGradient
               id="paint6_linear_16_99"
@@ -188,11 +188,11 @@ export default function Banner() {
               y2="141.597"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="white" />
-              <stop offset="0.135368" stop-color="#A2A2A2" />
-              <stop offset="0.42" stop-color="#F4F4F7" />
-              <stop offset="0.72" stop-color="#A2A2A2" />
-              <stop offset="1" stop-color="white" />
+              <stop stopColor="white" />
+              <stop offset="0.135368" stopColor="#A2A2A2" />
+              <stop offset="0.42" stopColor="#F4F4F7" />
+              <stop offset="0.72" stopColor="#A2A2A2" />
+              <stop offset="1" stopColor="white" />
             </linearGradient>
             <linearGradient
               id="paint7_linear_16_99"
@@ -202,11 +202,11 @@ export default function Banner() {
               y2="152.629"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="white" />
-              <stop offset="0.135368" stop-color="#A2A2A2" />
-              <stop offset="0.42" stop-color="#F4F4F7" />
-              <stop offset="0.72" stop-color="#A2A2A2" />
-              <stop offset="1" stop-color="white" />
+              <stop stopColor="white" />
+              <stop offset="0.135368" stopColor="#A2A2A2" />
+              <stop offset="0.42" stopColor="#F4F4F7" />
+              <stop offset="0.72" stopColor="#A2A2A2" />
+              <stop offset="1" stopColor="white" />
             </linearGradient>
             <linearGradient
               id="paint8_linear_16_99"
@@ -216,11 +216,11 @@ export default function Banner() {
               y2="152.629"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="white" />
-              <stop offset="0.135368" stop-color="#A2A2A2" />
-              <stop offset="0.42" stop-color="#F4F4F7" />
-              <stop offset="0.72" stop-color="#A2A2A2" />
-              <stop offset="1" stop-color="white" />
+              <stop stopColor="white" />
+              <stop offset="0.135368" stopColor="#A2A2A2" />
+              <stop offset="0.42" stopColor="#F4F4F7" />
+              <stop offset="0.72" stopColor="#A2A2A2" />
+              <stop offset="1" stopColor="white" />
             </linearGradient>
             <linearGradient
               id="paint9_linear_16_99"
@@ -230,11 +230,11 @@ export default function Banner() {
               y2="141.451"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="white" />
-              <stop offset="0.135368" stop-color="#A2A2A2" />
-              <stop offset="0.42" stop-color="#F4F4F7" />
-              <stop offset="0.72" stop-color="#A2A2A2" />
-              <stop offset="1" stop-color="white" />
+              <stop stopColor="white" />
+              <stop offset="0.135368" stopColor="#A2A2A2" />
+              <stop offset="0.42" stopColor="#F4F4F7" />
+              <stop offset="0.72" stopColor="#A2A2A2" />
+              <stop offset="1" stopColor="white" />
             </linearGradient>
             <linearGradient
               id="paint10_linear_16_99"
@@ -244,11 +244,11 @@ export default function Banner() {
               y2="16.1818"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#F6F6F8" />
-              <stop offset="0.26" stop-color="#A2A2A2" />
-              <stop offset="0.42" stop-color="#F4F4F7" />
-              <stop offset="0.62" stop-color="#F9E38E" />
-              <stop offset="1" stop-color="#AD741E" />
+              <stop stopColor="#F6F6F8" />
+              <stop offset="0.26" stopColor="#A2A2A2" />
+              <stop offset="0.42" stopColor="#F4F4F7" />
+              <stop offset="0.62" stopColor="#F9E38E" />
+              <stop offset="1" stopColor="#AD741E" />
             </linearGradient>
             <linearGradient
               id="paint11_linear_16_99"
@@ -258,11 +258,11 @@ export default function Banner() {
               y2="19.4921"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#F6F6F8" />
-              <stop offset="0.26" stop-color="#A2A2A2" />
-              <stop offset="0.42" stop-color="#F4F4F7" />
-              <stop offset="0.62" stop-color="#F9E38E" />
-              <stop offset="1" stop-color="#AD741E" />
+              <stop stopColor="#F6F6F8" />
+              <stop offset="0.26" stopColor="#A2A2A2" />
+              <stop offset="0.42" stopColor="#F4F4F7" />
+              <stop offset="0.62" stopColor="#F9E38E" />
+              <stop offset="1" stopColor="#AD741E" />
             </linearGradient>
             <linearGradient
               id="paint12_linear_16_99"
@@ -272,11 +272,11 @@ export default function Banner() {
               y2="11.64"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#F6F6F8" />
-              <stop offset="0.26" stop-color="#A2A2A2" />
-              <stop offset="0.42" stop-color="#F4F4F7" />
-              <stop offset="0.62" stop-color="#F9E38E" />
-              <stop offset="1" stop-color="#AD741E" />
+              <stop stopColor="#F6F6F8" />
+              <stop offset="0.26" stopColor="#A2A2A2" />
+              <stop offset="0.42" stopColor="#F4F4F7" />
+              <stop offset="0.62" stopColor="#F9E38E" />
+              <stop offset="1" stopColor="#AD741E" />
             </linearGradient>
             <clipPath id="clip0_16_99">
               <rect width="167.378" height="171.612" fill="white" />

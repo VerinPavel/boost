@@ -25,10 +25,9 @@ body {
   /* min-height: 2018px; */
   background-image: url(../img/backgorundFirst.png);
   background-size: cover;
-  padding-bottom: 100px;
 
-  @media (max-width: 1919px) {
-    background-image: unset;
+  @media (max-width: 1279px) and (min-width: 0) {
+    background-image: url(../img/backgorundSecond.png);
   }
 }
 
