@@ -55,7 +55,7 @@ export default function Modal({ isOpenModal, handleClose }: ModalProps) {
           <div className={styles.inputWrap}>
             <label htmlFor="">Name</label>
             <input
-              style={{ backgroundImage: "url(../../../public/name.svg)" }}
+              style={{ backgroundImage: "url(/name.svg)" }}
               type="text"
               placeholder="Name"
             />
@@ -63,7 +63,7 @@ export default function Modal({ isOpenModal, handleClose }: ModalProps) {
           <div className={styles.inputWrap}>
             <label htmlFor="">Email</label>
             <input
-              style={{ backgroundImage: "url(../../../public/message.svg)" }}
+              style={{ backgroundImage: "url(/message.svg)" }}
               type="text"
               placeholder="Email address"
             />
@@ -71,7 +71,7 @@ export default function Modal({ isOpenModal, handleClose }: ModalProps) {
           <div className={styles.inputWrap}>
             <label htmlFor="">Message</label>
             <input
-              style={{ backgroundImage: "url(../../../public/email.svg)" }}
+              style={{ backgroundImage: "url(/email.svg)" }}
               type="text"
               placeholder="Message"
             />

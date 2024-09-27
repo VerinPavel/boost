@@ -3,7 +3,7 @@
 import styles from "./mobileSecondarySlider.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState } from "react";
-import { Controller, EffectFade, Navigation } from "swiper/modules";
+import { Autoplay, Controller, EffectFade, Navigation } from "swiper/modules";
 
 import "swiper/css/bundle";
 import "./slider.css";
@@ -65,9 +65,10 @@ export default function MobileSecondarySlider() {
       <div className={styles.firstSliderWrap}>
         <Swiper
           className="firs-slider-mobile"
-          modules={[Controller, Navigation, EffectFade]}
+          modules={[Controller, Navigation, EffectFade, Autoplay]}
           controller={{ control: controlledSwiper }}
           spaceBetween={0}
+          autoplay={{ delay: 3000 }}
           slidesPerView={1}
           loop={true}
         >

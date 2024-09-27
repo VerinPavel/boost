@@ -1,16 +1,15 @@
 .home {
+  max-width: 1112px;
   display: flex;
-  // margin: 0 auto 72px auto;
-  padding: 168px 21.355% 72px 21.355%;
+  margin: 0 auto;
+  padding: 168px 0 72px 0;
 
   @media (max-width: 1023px) and (min-width: 0px) {
     padding: 34px 25px 72px 25px;
-    // background-image: url(../img/backgorundSecond.png);
     background-size: cover;
   }
   @media (max-width: 1919px) and (min-width: 1024px) {
     padding: 78.45px 126px 72px 126px;
-    // background-image: url(../img/backgorundSecond.png);
     background-size: cover;
   }
 
