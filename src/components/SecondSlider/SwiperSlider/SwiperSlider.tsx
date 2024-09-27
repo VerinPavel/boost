@@ -1,7 +1,7 @@
 // @ts-nocheck
 import styles from "./SwiperSlider.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Controller, Navigation } from "swiper/modules";
+import { EffectFade, Controller, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css/bundle";
 import "swiper/css/effect-fade";
 import "./SwiperSlider.css";
@@ -16,15 +16,15 @@ export default function SwiperSlider() {
         <div className={styles.firstSliderWrap}>
           <Swiper
             className="first-slider"
-            modules={[Controller, Navigation, EffectFade]}
+            modules={[Controller, Autoplay, Navigation, EffectFade]}
             controller={{ control: controlledSwiper }}
             spaceBetween={0}
             slidesPerView={1}
             loop={true}
             navigation
-            //   autoplay
+            grabCursor={true}
+            autoplay={{ delay: 3000 }}
             //   pagination={{ clickable: true }}
-            //   scrollbar={{ draggable: true }}
             //   onSwiper={(swiper) => console.log(swiper)}
             // onSlideChange={() => console.log("slide change")}
           >

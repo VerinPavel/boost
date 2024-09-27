@@ -1,5 +1,11 @@
 import styles from "./Slider.module.scss";
-import { Controller, EffectFade, Navigation, FreeMode } from "swiper/modules";
+import {
+  Controller,
+  EffectFade,
+  Navigation,
+  FreeMode,
+  Autoplay,
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css/bundle";
@@ -26,11 +32,12 @@ const Slider = () => {
       <div className={styles.thirdSlider}>
         <Swiper
           className="slider"
-          modules={[Controller, Navigation, EffectFade, FreeMode]}
+          modules={[Controller, Navigation, EffectFade, Autoplay, FreeMode]}
           // controller={{ control: controlledSwiper }}
           spaceBetween={24}
           slidesPerView={3}
           navigation
+          autoplay={{ delay: 3000 }}
           loop={true}
         >
           {slides.map((item: any, index) => (

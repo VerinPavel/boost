@@ -1,7 +1,6 @@
 .header {
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-between;
+  max-width: 1112px;
+  margin: 0 auto;
   background-image: unset;
   background-position: center;
 
@@ -17,13 +16,15 @@
 }
 
 .bacgroundImg {
+  max-width: 1112px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  padding: 50px 21.355% 0 21.355%;
+  padding: 50px 0;
   justify-content: space-between;
 
   @media (max-width: 1919px) and (min-width: 1280px) {
-    padding: 50px 128px 0;
+    padding: 50px 0;
   }
   @media (max-width: 1023px) and (min-width: 0px) {
     background-color: rgba(0, 0, 0, 0.4);
