@@ -1,5 +1,8 @@
 .services {
-  padding: 0 21.355% 100px;
+  max-width: 1112px;
+  // padding: 0 0 0 100px;
+  margin: 0 auto;
+  padding-bottom: 100px;
 
   @media (max-width: 1919px) and (min-width: 1280px) {
     padding: 0px 128px 100px;
@@ -22,6 +25,11 @@
   font-family: Measure;
 }
 
+.sliderWraper {
+  display: flex;
+  justify-content: center;
+}
+
 .wrap {
   display: flex;
   gap: 45px;
@@ -36,7 +44,7 @@
 }
 
 .subtitle {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 27px;
   margin-bottom: 27px;
@@ -50,9 +58,13 @@
 
   @media (max-width: 1279px) and (min-width: 1024px) {
     flex-direction: row;
+    overflow: overlay;
+    width: 100%;
   }
   @media (max-width: 1023px) and (min-width: 0px) {
     flex-direction: row;
+    overflow: overlay;
+    width: 100%;
   }
 }
 

@@ -24,7 +24,7 @@ export default function OurServices() {
       <div>
         <p className={styles.title}>Our Services</p>
         <div className={styles.wrap}>
-          <div className={styles.firtPart}>
+          <div className={styles.firtsPart}>
             <p className={styles.subtitle}>
               Brand Boost offers a range of design services that are tailored to
               meet the unique needs of each client
@@ -74,7 +74,9 @@ export default function OurServices() {
               ))}
             </div>
           </div>
-          <Slider array={selectImgs(activeBtn)} />
+          <div className={styles.sliderWraper}>
+            <Slider array={selectImgs(activeBtn)} />
+          </div>
         </div>
       </div>
       <Line />

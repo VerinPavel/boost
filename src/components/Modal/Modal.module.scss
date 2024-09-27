@@ -108,10 +108,11 @@
     font-size: 16px;
     line-height: 24px;
     font-family: Gilroy;
-    border: 0px;
     border-radius: 16px;
     background-position: 32px center;
     background-repeat: no-repeat;
+    border: 1px solid #e3e6e9;
+    outline: none;
     @media (max-width: 1279px) and (min-width: 1024px) {
       font-size: 20px;
     }

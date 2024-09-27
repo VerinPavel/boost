@@ -117,10 +117,6 @@ export default function Form({ setIsOpenModal }: FormProps) {
           />
         </div>
       </div>
-      {/* {isOpenModal ? (
-        <Modal isOpenModal={isOpenModal} setIsOpenModal={setIsOpenModal} />
-      ) : null} */}
-      {/* <Modal isOpenModal={isOpenModal} setIsOpenModal={setIsOpenModal} /> */}
     </div>
   );
 }

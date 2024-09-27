@@ -1,19 +1,14 @@
-import { useMediaQuery } from "@react-hook/media-query";
 import styles from "./SecondSlider.module.scss";
-import Slider from "./slider/Slider";
+import SwiperSlider from "./SwiperSlider/SwiperSlider";
+import Line from "../../ui/Line/Line";
 
 export default function SecondSlider() {
-  const Mobile = useMediaQuery("(max-width: 1023px)");
   return (
     <section id="cases" className={styles.secondSlider}>
       <div className={styles.top}>
-        {Mobile ? (
-          <p className={styles.title}>Our Works</p>
-        ) : (
-          <p className={styles.title}>
-            our best work of <br /> successful projects
-          </p>
-        )}
+        <p className={styles.title}>
+          our best work of <br /> successful projects
+        </p>
         <button className={styles.btn}>
           <div>
             <p>See More</p>
@@ -33,8 +28,10 @@ export default function SecondSlider() {
           </div>
         </button>
       </div>
-
-      <Slider />
+      <div className={styles.body}>
+        <SwiperSlider />
+        <Line />
+      </div>
     </section>
   );
 }

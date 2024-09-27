@@ -25,7 +25,9 @@ export default function Burger() {
       }, 10);
     } else {
       setIsMenuOpen(false);
-      setIsOpen(false);
+      setTimeout(() => {
+        setIsOpen(false);
+      }, 1500);
     }
   };
 

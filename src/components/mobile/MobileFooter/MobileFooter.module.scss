@@ -40,8 +40,8 @@ ul {
   border-right: 0;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
-  -webkit-border-image: url("../../../public/img/backgroundText.jpg");
-  border-image: url("../../../public/img/backgroundText.jpg") 30 repeat;
+  -webkit-border-image: url("../../../img/backgroundText.jpg");
+  border-image: url("../../../img/backgroundText.jpg") 30 repeat;
 
   @media (max-width: 1023px) {
     padding: 20px 0;
@@ -69,8 +69,8 @@ ul {
   padding: 40px 0;
   margin-bottom: 40px;
   border-bottom: 2px solid transparent;
-  -webkit-border-image: url("../../../public/img/backgroundText.jpg");
-  border-image: url("../../../public/img/backgroundText.jpg") 30 repeat;
+  -webkit-border-image: url("../../img/backgroundText.jpg");
+  border-image: url("../../../img/backgroundText.jpg") 30 repeat;
 
   @media (max-width: 1023px) {
     padding: 20px 0;

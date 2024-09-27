@@ -1,0 +1,41 @@
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-image: url("../../../img/backgroundText.jpg");
+  background-size: contain;
+}
+
+.swiper-pagination-bullet {
+  background-color: #c5c5c5;
+  opacity: 1;
+  width: var(
+    --swiper-pagination-bullet-width,
+    var(--swiper-pagination-bullet-size, 16px)
+  );
+  height: var(
+    --swiper-pagination-bullet-height,
+    var(--swiper-pagination-bullet-size, 16px)
+  );
+}
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, 28px);
+  top: var(--swiper-pagination-top, auto);
+  left: -110px;
+  width: 100%;
+
+  @media (max-width: 1023px) and (min-width: 0) {
+    bottom: var(--swiper-pagination-bottom, auto);
+    top: var(--swiper-pagination-top, 370px);
+    left: 0;
+    width: 100%;
+  }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 14px);
+}
+
+/* .our-slider .swiper-slide.swiper-slide-active {
+  width: 400px;
+  height: 200px;
+} */

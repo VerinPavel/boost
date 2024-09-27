@@ -2,8 +2,6 @@
   position: relative;
   max-width: 281px;
   width: 100%;
-  padding: 6.5px 11.5px;
-  border: 1px solid #ffffff;
   background-color: transparent;
   border-radius: 5px;
   color: #ffffff;
@@ -19,25 +17,20 @@
   font-family: Gilroy;
 }
 
-.openSvg {
-  transform: rotate(180deg);
-}
-
 .options {
   position: absolute;
-  left: -1px;
   width: 100%;
-  max-width: 281px;
-  margin-top: 5px;
+  box-sizing: border-box;
   padding: 10px 11.5px 5px;
   border: 1px solid #ffffff;
   border-top: 0;
-  border-radius: 0 0 5px 5px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   font-size: 18px;
   font-family: Gilroy;
+  background-color: rgba(0, 0, 0, 50%);
+  backdrop-filter: blur(2px);
 }
 
 .option {
@@ -48,4 +41,18 @@
     color: #ffb700;
     // background-color: #414141;
   }
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 6.5px 11.5px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.wrap.open {
+  border-radius: 5px 5px 0 0;
 }
