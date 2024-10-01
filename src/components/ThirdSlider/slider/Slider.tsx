@@ -1,11 +1,5 @@
 import styles from "./Slider.module.scss";
-import {
-  Controller,
-  EffectFade,
-  Navigation,
-  FreeMode,
-  Autoplay,
-} from "swiper/modules";
+import { Controller, Navigation, FreeMode, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css/bundle";
@@ -36,27 +30,27 @@ const Slider = () => {
     } else return 1;
   };
 
+  console.log(spaceBetween());
+
   return (
-    <>
-      <div className={styles.thirdSlider}>
-        <Swiper
-          className="slider"
-          modules={[Controller, Navigation, EffectFade, Autoplay, FreeMode]}
-          spaceBetween={spaceBetween()}
-          slidesPerView={preview()}
-          navigation
-          // autoplay={{ delay: 3000 }}
-          loop={true}
-          speed={1200}
-        >
-          {slides.map((item: any, index) => (
-            <SwiperSlide key={index}>
-              <img className={styles.img} src={item} alt="" />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-    </>
+    <div className={styles.thirdSlider}>
+      <Swiper
+        className="slider"
+        modules={[Controller, Navigation, Autoplay, FreeMode]}
+        spaceBetween={spaceBetween()}
+        slidesPerView={preview()}
+        navigation
+        loop={true}
+        grabCursor={true}
+        speed={1200}
+      >
+        {slides.map((item: any, index) => (
+          <SwiperSlide key={index}>
+            <img className={styles.img} src={item} alt="" />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 };
 

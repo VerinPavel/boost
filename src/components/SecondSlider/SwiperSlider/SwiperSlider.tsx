@@ -1,28 +1,43 @@
 // @ts-nocheck
 import styles from "./SwiperSlider.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Controller, Navigation, Autoplay } from "swiper/modules";
+import {
+  EffectFade,
+  Controller,
+  Navigation,
+  Autoplay,
+  FreeMode,
+} from "swiper/modules";
 import "swiper/css/bundle";
 import "swiper/css/effect-fade";
 import "./SwiperSlider.css";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function SwiperSlider() {
   const [controlledSwiper, setControlledSwiper] = useState(null);
+  const [spaceBetween, setSpaceBetween] = useState(55);
+  const mobile = useMediaQuery("(max-width: 1023px) and (min-width: 0)");
+
+  useEffect(() => {
+    if (!mobile) {
+      setSpaceBetween(55);
+    } else setSpaceBetween(25);
+  }, [mobile]);
+
   return (
     <div className={styles.container}>
       <div className={styles.contanerInner}>
         <div className={styles.firstSliderWrap}>
           <Swiper
             className="first-slider"
-            modules={[Controller, Autoplay, Navigation, EffectFade]}
+            modules={[Controller, Autoplay, FreeMode]}
             controller={{ control: controlledSwiper }}
-            spaceBetween={0}
+            spaceBetween={55}
             slidesPerView={1}
             loop={true}
-            navigation
             grabCursor={true}
+            speed={1200}
             autoplay={{ delay: 3000 }}
           >
             <SwiperSlide>
@@ -64,7 +79,7 @@ export default function SwiperSlider() {
             effect="fade"
             fadeEffect={{ crossFade: true }}
             onSwiper={setControlledSwiper}
-            spaceBetween={0}
+            spaceBetween={spaceBetween}
             slidesPerView={1}
             loop={true}
             allowTouchMove={false}

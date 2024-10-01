@@ -67,9 +67,10 @@ export default function MobileSecondarySlider() {
           className="firs-slider-mobile"
           modules={[Controller, Navigation, EffectFade, Autoplay]}
           controller={{ control: controlledSwiper }}
-          spaceBetween={0}
-          // autoplay={{ delay: 3000 }}
+          spaceBetween={25}
+          autoplay={{ delay: 3000 }}
           slidesPerView={1}
+          speed={1200}
           loop={true}
         >
           {mobileImg.map((item: any) => (
