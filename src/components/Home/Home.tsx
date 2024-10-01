@@ -3,11 +3,12 @@ import { useMediaQuery } from "@react-hook/media-query";
 import styles from "./Home.module.scss";
 import { cards, cardsMobile } from "./data.ts";
 import { CardProps } from "./data.ts";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [state, setState] = useState(true);
   const Desktop = useMediaQuery("(min-width: 1280px)");
-  const fullHD = useMediaQuery("(min-width: 1920px)");
-  // and (max-width: 1920px)
+  const fullHD = useMediaQuery("(max-width: 1920px)");
   const data = () => {
     if (!Desktop) {
       return cardsMobile;
@@ -15,6 +16,11 @@ export default function Home() {
   };
 
   const array = data();
+  useEffect(() => {
+    setState(false);
+    console.log("DOM загружен");
+  }, []);
+
   return (
     <section id="home" className={styles.home}>
       <div className={styles.info}>
@@ -81,29 +87,29 @@ export default function Home() {
         )}
       </div>
       {fullHD ? (
-        <div className={styles.photo}>
+        <div className={`${state ? styles.hidden : ""} ${styles.photo}`}>
           <img
-            className={styles.group}
+            className={`${state ? styles.hidden : ""} ${styles.group}`}
             src="../../../img/home/pichi/group.png"
             alt=""
           />
           <img
-            className={styles.flower}
+            className={`${state ? styles.hidden : ""} ${styles.flower}`}
             src="../../../img/home/pichi/flower.png"
             alt=""
           />
           <img
-            className={styles.pills}
+            className={`${state ? styles.hidden : ""} ${styles.pills}`}
             src="../../../img/home/pichi/pills.png"
             alt=""
           />
           <img
-            className={styles.ads}
+            className={`${state ? styles.hidden : ""} ${styles.ads}`}
             src="../../../img/home/pichi/ads.png"
             alt=""
           />
           <img
-            className={styles.ronin}
+            className={`${state ? styles.hidden : ""} ${styles.ronin}`}
             src="../../../img/home/pichi/ronin.png"
             alt=""
           />

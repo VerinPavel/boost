@@ -24,6 +24,7 @@ body {
 .firstPart {
   background-image: url(../img/backgorundFirst.png);
   background-size: cover;
+  overflow: hidden;
 
   @media (max-width: 1279px) and (min-width: 0) {
     background-image: url(../img/backgorundSecond.png);
