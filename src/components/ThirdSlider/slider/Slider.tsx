@@ -11,6 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
 import "swiper/css/effect-fade";
 import "./Slider.css";
+import { useMediaQuery } from "@react-hook/media-query";
 
 const slides = [
   "../../../img/thirdSlider/2.png",
@@ -27,6 +28,20 @@ const slides = [
 // ];
 
 const Slider = () => {
+  const mobile = useMediaQuery("(max-width: 1023px) and (min-width: 0)");
+
+  const spaceBetween = () => {
+    if (!mobile) {
+      return 22;
+    } else return 50;
+  };
+
+  const preview = () => {
+    if (!mobile) {
+      return 3;
+    } else return 1;
+  };
+
   return (
     <>
       <div className={styles.thirdSlider}>
@@ -34,11 +49,12 @@ const Slider = () => {
           className="slider"
           modules={[Controller, Navigation, EffectFade, Autoplay, FreeMode]}
           // controller={{ control: controlledSwiper }}
-          spaceBetween={24}
-          slidesPerView={3}
+          spaceBetween={spaceBetween()}
+          slidesPerView={preview()}
           navigation
-          autoplay={{ delay: 3000 }}
+          // autoplay={{ delay: 3000 }}
           loop={true}
+          speed={1200}
         >
           {slides.map((item: any, index) => (
             <SwiperSlide key={index}>

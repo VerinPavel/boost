@@ -68,13 +68,15 @@ export default function MobileSecondarySlider() {
           modules={[Controller, Navigation, EffectFade, Autoplay]}
           controller={{ control: controlledSwiper }}
           spaceBetween={0}
-          autoplay={{ delay: 3000 }}
+          // autoplay={{ delay: 3000 }}
           slidesPerView={1}
           loop={true}
         >
           {mobileImg.map((item: any) => (
             <SwiperSlide key={item.id}>
-              <img className={styles.img} src={item.img} alt="" />
+              <div className={styles.imgWrap}>
+                <img className={styles.img} src={item.img} alt="" />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>

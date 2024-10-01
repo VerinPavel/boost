@@ -24,9 +24,6 @@ export default function SwiperSlider() {
             navigation
             grabCursor={true}
             autoplay={{ delay: 3000 }}
-            //   pagination={{ clickable: true }}
-            //   onSwiper={(swiper) => console.log(swiper)}
-            // onSlideChange={() => console.log("slide change")}
           >
             <SwiperSlide>
               <div className={styles.slide}>

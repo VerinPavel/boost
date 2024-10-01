@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 16" width="29" height="16">
+	<title>Arrow 2-svg</title>
+	<defs>
+		<image  width="29" height="16" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAQCAMAAADd04TjAAAAAXNSR0IB2cksfwAAAEVQTFRF////3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3doVFdggAAABd0Uk5TAAs6EM3/ShHHE9QMFA8X2NLdEs7ISDsFxoUqAAAAbElEQVR4nIXRSQqAMAwF0HwjFAfUjfe/n6ILR7DYWrtO2iyyefDJAIoFOBIKsTOAR1PzgnErath6cyrJrbO+2iUM2uFqXhkJHR9NscpIqK0iUUukNJ2cniqzUeYagdutX7ym/xeGWVXCOEnJH4fuIhuRLl70AAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Инвертировать 1" href="#img1" x="0" y="0"/>
+</svg>

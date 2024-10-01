@@ -111,6 +111,11 @@
   @media (max-width: 1023px) and (min-width: 0px) {
     font-size: 14px;
   }
+
+  &::placeholder {
+    color: white;
+    font-family: Gilroy;
+  }
 }
 
 .checkboxesWrap {

@@ -44,39 +44,40 @@ export default function Home() {
             <Line height="2px" />
           </div>
         )}
-        <div>
-          {Desktop ? (
-            <ul>
-              <li>
-                <span>partnership</span>
-              </li>
-              <li>transparency</li>
-              <li>
-                <span>respect</span>
-              </li>
-              <li>focus</li>
-            </ul>
-          ) : (
-            <div className={styles.valuesWrap}>
-              <p className={styles.valueTitle}>Our values:</p>
-              <div className={styles.valueWrap}>
-                <div className={styles.firtLine}>
-                  <p className={styles.pLine}>
-                    <span>partnership</span>
-                  </p>
-                  <p>respect</p>
-                </div>
-                <Line height="1.5px" />
-                <div className={styles.secondLine}>
-                  <p className={styles.pLine}>focus</p>
-                  <p>
-                    <span>transparency</span>
-                  </p>
-                </div>
+        {Desktop ? (
+          <ul>
+            <li>
+              <span>partnership</span>
+            </li>
+            <div className={styles.verticalLine}></div>
+            <li>transparency</li>
+            <div className={styles.verticalLine}></div>
+            <li>
+              <span>respect</span>
+            </li>
+            <div className={styles.verticalLine}></div>
+            <li>focus</li>
+          </ul>
+        ) : (
+          <div className={styles.valuesWrap}>
+            <p className={styles.valueTitle}>Our values:</p>
+            <div className={styles.valueWrap}>
+              <div className={styles.firtLine}>
+                <p className={styles.pLine}>
+                  <span>partnership</span>
+                </p>
+                <p>respect</p>
+              </div>
+              <Line height="1.5px" />
+              <div className={styles.secondLine}>
+                <p className={styles.pLine}>focus</p>
+                <p>
+                  <span>transparency</span>
+                </p>
               </div>
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </div>
       {/* <div className={styles.photo}>
         <img
