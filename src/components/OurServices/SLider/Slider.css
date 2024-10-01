@@ -50,7 +50,7 @@
   }
   @media (max-width: 767px) and (min-width: 0px) {
     bottom: var(--swiper-pagination-bottom, auto);
-    top: var(--swiper-pagination-top, 60%);
+    top: var(--swiper-pagination-top, 55%);
     left: 0;
     width: 100%;
   }
@@ -61,8 +61,3 @@
   .swiper-pagination-bullet {
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 14px);
 }
-
-/* .our-slider .swiper-slide.swiper-slide-active {
-  width: 400px;
-  height: 200px;
-} */

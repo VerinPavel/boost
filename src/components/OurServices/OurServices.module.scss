@@ -14,7 +14,7 @@
   @media (max-width: 1023px) and (min-width: 0px) {
     // overflow: hidden;
     max-width: 100%;
-    padding: 0 22px 150px;
+    padding: 0 25px 72px;
   }
 }
 
@@ -27,7 +27,9 @@
 
 .sliderWraper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .wrap {
@@ -39,6 +41,7 @@
     flex-direction: column;
   }
   @media (max-width: 1023px) and (min-width: 0px) {
+    margin-bottom: 72px;
     flex-direction: column;
   }
 }

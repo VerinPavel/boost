@@ -33,12 +33,16 @@ export default function Slider({ array }: any) {
               <div className={styles.imgWrap}>
                 <img src={slider.firstImg} alt="" />
               </div>
-              <div className={styles.smallimg}>
+              <div className={styles.smallimgs}>
                 {slider.secondImg && (
-                  <img src={slider.secondImg} alt={slider.id} />
+                  <div className={styles.smalImg}>
+                    <img src={slider.secondImg} alt={slider.id} />
+                  </div>
                 )}
                 {slider.thirdImg && (
-                  <img src={slider.thirdImg} alt={slider.id} />
+                  <div className={styles.smalImg}>
+                    <img src={slider.thirdImg} alt={slider.id} />
+                  </div>
                 )}
               </div>
             </div>

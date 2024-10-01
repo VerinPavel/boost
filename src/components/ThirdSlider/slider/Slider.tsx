@@ -21,19 +21,13 @@ const slides = [
   "../../../img/thirdSlider/2.png",
 ];
 
-// const slidesMobile = [
-//   "../../../img/thirdSlider/4.png",
-//   "../../../img/thirdSlider/2.png",
-//   "../../../img/thirdSlider/3.png",
-// ];
-
 const Slider = () => {
   const mobile = useMediaQuery("(max-width: 1023px) and (min-width: 0)");
 
   const spaceBetween = () => {
     if (!mobile) {
-      return 22;
-    } else return 50;
+      return 55;
+    } else return 0;
   };
 
   const preview = () => {
@@ -48,7 +42,6 @@ const Slider = () => {
         <Swiper
           className="slider"
           modules={[Controller, Navigation, EffectFade, Autoplay, FreeMode]}
-          // controller={{ control: controlledSwiper }}
           spaceBetween={spaceBetween()}
           slidesPerView={preview()}
           navigation

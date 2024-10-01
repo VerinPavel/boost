@@ -32,7 +32,6 @@ function App() {
         <OurServices />
       </div>
       <Banner />
-      {/* {Desktop ?  : <MobileOurSlider />} */}
       <div className="secondPart">
         {!Desktop ? <MobileSecondarySlider /> : <SecondSlider />}
         <ThirdSlider />
