@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [state, setState] = useState(true);
   const Desktop = useMediaQuery("(min-width: 1280px)");
-  const fullHD = useMediaQuery("(max-width: 1920px)");
+  const fullHD = useMediaQuery("(max-width: 1920px) and (min-width:1280px)");
   const data = () => {
     if (!Desktop) {
       return cardsMobile;

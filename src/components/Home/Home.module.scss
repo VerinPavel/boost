@@ -293,7 +293,7 @@
 .photo {
   position: relative;
   right: 0;
-  transition: 0.5s;
+  transition: 1s;
   img {
     position: absolute;
   }
@@ -307,7 +307,7 @@
   position: absolute;
 
   left: -400px;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .group.hidden {
@@ -318,7 +318,7 @@
   position: absolute;
   top: -100px;
   left: -100px;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .pills.hidden {
@@ -330,7 +330,7 @@
   position: absolute;
   bottom: 200px;
   left: -100px;
-  transition: 0.6s;
+  transition: 1s;
 }
 
 .ads.hidden {
@@ -342,7 +342,7 @@
   position: absolute;
   top: -200px;
   right: -400px;
-  transition: 0.7s;
+  transition: 1.4s;
 }
 
 .ronin.hidden {
@@ -354,7 +354,7 @@
   position: absolute;
   top: 420px;
   right: -400px;
-  transition: 0.7s;
+  transition: 1.4s;
 }
 
 .flower.hidden {

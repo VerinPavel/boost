@@ -14,7 +14,9 @@ export default function ThirdSlider() {
           </p>
         </div>
       </div>
-      <Slider />
+      <div style={{ padding: "0 25px", width: "100%" }}>
+        <Slider />
+      </div>
     </section>
   );
 }
