@@ -44,7 +44,7 @@
 
   @media (max-width: 1023px) and (min-width: 768px) {
     bottom: var(--swiper-pagination-bottom, auto);
-    top: var(--swiper-pagination-top, 65%);
+    top: var(--swiper-pagination-top, 55%);
     left: 0;
     width: 100%;
   }

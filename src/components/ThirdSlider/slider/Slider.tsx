@@ -27,7 +27,7 @@ const Slider = () => {
   const spaceBetween = () => {
     if (!mobile) {
       return 55;
-    } else return 0;
+    } else return 25;
   };
 
   const preview = () => {
