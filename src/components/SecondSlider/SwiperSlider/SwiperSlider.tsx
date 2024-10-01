@@ -13,6 +13,7 @@ import "swiper/css/effect-fade";
 import "./SwiperSlider.css";
 
 import { useEffect, useState } from "react";
+import { useMediaQuery } from "@react-hook/media-query";
 
 export default function SwiperSlider() {
   const [controlledSwiper, setControlledSwiper] = useState(null);
