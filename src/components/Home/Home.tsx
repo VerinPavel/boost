@@ -6,7 +6,8 @@ import { CardProps } from "./data.ts";
 
 export default function Home() {
   const Desktop = useMediaQuery("(min-width: 1280px)");
-
+  const fullHD = useMediaQuery("(min-width: 1920px)");
+  // and (max-width: 1920px)
   const data = () => {
     if (!Desktop) {
       return cardsMobile;
@@ -79,33 +80,35 @@ export default function Home() {
           </div>
         )}
       </div>
-      {/* <div className={styles.photo}>
-        <img
-          className={styles.group}
-          src="../../../img/home/pichi/group.png"
-          alt=""
-        />
-        <img
-          className={styles.flower}
-          src="../../../img/home/pichi/flower.png"
-          alt=""
-        />
-        <img
-          className={styles.pills}
-          src="../../../img/home/pichi/pills.png"
-          alt=""
-        />
-        <img
-          className={styles.ads}
-          src="../../../img/home/pichi/ads.png"
-          alt=""
-        />
-        <img
-          className={styles.ronin}
-          src="../../../img/home/pichi/ronin.png"
-          alt=""
-        />
-      </div> */}
+      {fullHD ? (
+        <div className={styles.photo}>
+          <img
+            className={styles.group}
+            src="../../../img/home/pichi/group.png"
+            alt=""
+          />
+          <img
+            className={styles.flower}
+            src="../../../img/home/pichi/flower.png"
+            alt=""
+          />
+          <img
+            className={styles.pills}
+            src="../../../img/home/pichi/pills.png"
+            alt=""
+          />
+          <img
+            className={styles.ads}
+            src="../../../img/home/pichi/ads.png"
+            alt=""
+          />
+          <img
+            className={styles.ronin}
+            src="../../../img/home/pichi/ronin.png"
+            alt=""
+          />
+        </div>
+      ) : null}
     </section>
   );
 }
