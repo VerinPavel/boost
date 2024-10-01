@@ -1,6 +1,5 @@
 .services {
   max-width: 1112px;
-  // padding: 0 0 0 100px;
   margin: 0 auto;
   padding-bottom: 100px;
 
@@ -9,11 +8,12 @@
   }
 
   @media (max-width: 1279px) and (min-width: 1024px) {
-    overflow: hidden;
+    // overflow: hidden;
     padding: 0 85px 150px;
   }
   @media (max-width: 1023px) and (min-width: 0px) {
-    overflow: hidden;
+    // overflow: hidden;
+    max-width: 100%;
     padding: 0 22px 150px;
   }
 }
@@ -60,11 +60,13 @@
     flex-direction: row;
     overflow: overlay;
     width: 100%;
+    scrollbar-width: none;
   }
   @media (max-width: 1023px) and (min-width: 0px) {
     flex-direction: row;
     overflow: overlay;
     width: 100%;
+    scrollbar-width: none;
   }
 }
 
@@ -88,6 +90,10 @@
       fill: #ffffff;
     }
   }
+
+  @media (max-width: 1023px) and (min-width: 0px) {
+    padding: 14.5px 35px;
+  }
 }
 
 .active {
@@ -106,16 +112,27 @@
   .arrow path {
     fill: #ffffff;
   }
+  @media (max-width: 1023px) and (min-width: 0px) {
+    padding: 14.5px 35px;
+  }
 }
 
 .number {
   font-size: 24px;
   font-family: Measure;
+
+  @media (max-width: 1023px) and (min-width: 0px) {
+    font-size: 18.5;
+  }
 }
 
 .desc {
   font-size: 20px;
   font-family: Gilroy;
+
+  @media (max-width: 1023px) and (min-width: 0px) {
+    font-size: 14.5;
+  }
 }
 
 .text {

@@ -27,13 +27,13 @@
     padding: 50px 0;
   }
   @media (max-width: 1023px) and (min-width: 0px) {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 47px 22px 25px 22px;
     justify-content: space-between;
   }
   @media (max-width: 1279px) and (min-width: 1024px) {
     gap: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     justify-content: space-between;
     padding: 43px 85px 22px 85px;
   }

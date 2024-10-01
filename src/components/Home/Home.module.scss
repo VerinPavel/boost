@@ -15,7 +15,13 @@
 
   ul {
     display: flex;
-    gap: 52px;
+    justify-content: space-between;
+    width: 1112px;
+    // gap: 52px;
+
+    @media (max-width: 1281px) and (min-width: 1280px) {
+      width: 1026px;
+    }
   }
 
   li {
@@ -36,13 +42,26 @@
 
     @media (max-width: 1919px) and (min-width: 1024px) {
       // font-size: 68px;
-      text-wrap: wrap;
+      // text-wrap: wrap;
     }
   }
-  li:not(:last-child) {
-    padding-right: 28px;
-    border-right: 1px solid #000000;
-  }
+}
+
+.verticalLine {
+  position: relative;
+  width: 1px;
+  height: auto;
+  background-color: black;
+}
+
+.vertical-line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: black;
 }
 
 .valuesWrap {

@@ -20,7 +20,7 @@ export default function Slider({ array }: any) {
         ref={swiperRef}
         className="our-slider"
         modules={[Controller, Navigation, Pagination, Autoplay, EffectFade]}
-        autoplay={{ delay: 3000 }}
+        // autoplay={{ delay: 3000 }}
         spaceBetween={0}
         slidesPerView={1}
         loop={true}

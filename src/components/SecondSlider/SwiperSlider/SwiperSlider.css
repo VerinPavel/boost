@@ -12,6 +12,9 @@
   opacity: 0 !important;
 }
 
+.swiper-slide.swiper-slide-active {
+  border-radius: 50px;
+}
 .first-slider .swiper-button-prev {
   background-repeat: no-repeat;
   background-size: 50px 20px;
@@ -25,6 +28,13 @@
 
 .first-slider .swiper-button-prev:hover {
   background-color: #414141;
+  background-color: #414141;
+  background-image: url("/rightWhite.svg");
+  background-size: 50px 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
 }
 
 .first-slider .swiper-button-prev:after {
@@ -51,4 +61,11 @@
 
 .first-slider .swiper-button-next:hover {
   background-color: #414141;
+  background-image: url("/rightWhite.svg");
+  transform: rotate(180deg);
+  background-size: 50px 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
 }
