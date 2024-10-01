@@ -75,9 +75,8 @@
   border: 2px solid transparent;
   background-color: #24242480;
   overflow: hidden;
-
-  -webkit-border-image: url("../../../img/backgroundText.jpg");
-  border-image: url("../../../img/backgroundText.jpg") 30 repeat;
+  border: 2px solid #ffd700;
+  border-radius: 14px;
 
   @media (max-width: 1023px) and (min-width: 0px) {
     padding: 18px 22px;
