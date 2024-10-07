@@ -14,7 +14,7 @@ export default function ThirdSlider() {
           </p>
         </div>
       </div>
-      <div style={{ padding: "0 25px", width: "100%" }}>
+      <div style={{ padding: "0 25px", width: "100%", display: 'flex', justifyContent: 'center' }}>
         <Slider />
       </div>
     </section>

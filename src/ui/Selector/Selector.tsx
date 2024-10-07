@@ -8,10 +8,10 @@ export interface Option {
 
 export const Selector = ({
   options,
-  onSelect,
+  // onSelect,
 }: {
   options: Option[];
-  onSelect: (option: Option) => void;
+  // onSelect: (option: Option) => void;
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState<Option | null>(null);
@@ -19,7 +19,7 @@ export const Selector = ({
   const handleOptionClick = (option: Option) => {
     setSelectedOption(option);
     setIsOpen(false);
-    onSelect(option);
+    // onSelect(option);
   };
 
   return (

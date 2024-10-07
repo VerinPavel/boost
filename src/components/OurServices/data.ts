@@ -11,9 +11,11 @@ export type arrayImg = {
 import adsAstra1 from '/img/ourServices/branding/adsAstra/1.png'
 import adsAstra2 from '/img/ourServices/branding/adsAstra/2.png'
 import adsAstra3 from '/img/ourServices/branding/adsAstra/3.png'
+
 import alone1 from '/img/ourServices/branding/notAlone/1.png'
 import alone2 from '/img/ourServices/branding/notAlone/2.png'
 import alone3 from '/img/ourServices/branding/notAlone/3.png'
+
 import pills1 from '/img/ourServices/branding/pills/1.png'
 import pills2 from '/img/ourServices/branding/pills/2.png'
 import pills3 from '/img/ourServices/branding/pills/3.png'
@@ -29,6 +31,14 @@ import criptoinvest3 from '/img/ourServices/blogers/criptoinvest/3.png'
 import ravena1 from '/img/ourServices/blogers/ravena/1.png'
 import ravena2 from '/img/ourServices/blogers/ravena/2.png'
 import ravena3 from '/img/ourServices/blogers/ravena/3.png'
+
+import pourhomme from '/img/ourServices/prod/1.png'
+import soldout from '/img/ourServices/prod/2.png'
+import colours from '/img/ourServices/prod/3.png'
+
+import car from '/img/ourServices/aiProd/1.png'
+import array from '/img/ourServices/aiProd/2.png'
+
 
 
 
@@ -98,3 +108,45 @@ export const blogersImg: arrayImg[] = [
     },
     
 ]
+
+export const prodImg: arrayImg[] = [
+    {
+        id: 1,
+        firstImg: pourhomme ,
+        secondImg: finan2,
+        thirdImg: finan3,
+    },
+    {
+        id: 2,
+        firstImg: soldout,
+        secondImg: ravena2,
+        thirdImg: ravena3,
+    },
+    {
+        id: 3,
+        firstImg: colours,
+        secondImg: criptoinvest2,
+        thirdImg: criptoinvest3,
+    },
+    
+]
+
+export const aiProdImg: arrayImg[] = [
+    {
+        id: 1,
+        firstImg: car ,
+        secondImg: finan2,
+        thirdImg: finan3,
+        link: 'https://translate.yandex.ru/?utm_source=ntp_chrome',
+    },
+    {
+        id: 2,
+        firstImg: array,
+        secondImg: ravena2,
+        thirdImg: ravena3,
+        link: 'https://translate.yandex.ru/?utm_source=ntp_chrome',
+    },
+    
+    
+]
+

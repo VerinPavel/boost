@@ -14,14 +14,19 @@ import { useRef } from "react";
 
 export default function Slider({ array }: any) {
   const swiperRef = useRef(null);
+
+  const handleClick = (link: any) => {
+    window.open(`${link}`, "_blank");
+
+  };
+
   return (
     <div className={styles.wraper}>
       <Swiper
         ref={swiperRef}
         className="our-slider"
         modules={[Controller, Navigation, Pagination, Autoplay, EffectFade]}
-        // autoplay={{ delay: 3000 }}
-        spaceBetween={0}
+        spaceBetween={55}
         slidesPerView={1}
         loop={true}
         pagination={true}
@@ -30,9 +35,15 @@ export default function Slider({ array }: any) {
         {array.map((slider: any) => (
           <SwiperSlide key={slider.id}>
             <div className={styles.slider}>
-              <div className={styles.imgWrap}>
+              {slider.link ? (
+                 <div className={styles.imgWrap}  onClick={() => handleClick(slider.link)}>
+                 <img src={slider.firstImg} alt="" />
+               </div>
+              ) : (
+                <div className={styles.imgWrap} >
                 <img src={slider.firstImg} alt="" />
               </div>
+              )}
               <div className={styles.smallimgs}>
                 {slider.secondImg && (
                   <div className={styles.smalImg}>

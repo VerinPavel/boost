@@ -8,11 +8,17 @@ import "./Slider.css";
 import { useMediaQuery } from "@react-hook/media-query";
 
 const slides = [
+  // "../../../img/thirdSlider/2.png",
+  // "../../../img/thirdSlider/2.png",
+  // "../../../img/thirdSlider/2.png",
+  // "../../../img/thirdSlider/2.png",
+  '/img/ourServices/branding/adsAstra/1.png',
   "../../../img/thirdSlider/2.png",
-  "../../../img/thirdSlider/2.png",
-  "../../../img/thirdSlider/2.png",
-  "../../../img/thirdSlider/2.png",
-  "../../../img/thirdSlider/2.png",
+ '/img/ourServices/branding/notAlone/1.png',
+ '/img/ourServices/branding/pills/1.png',
+
+
+
 ];
 
 const Slider = () => {
@@ -30,7 +36,6 @@ const Slider = () => {
     } else return 1;
   };
 
-  console.log(spaceBetween());
 
   return (
     <div className={styles.thirdSlider}>

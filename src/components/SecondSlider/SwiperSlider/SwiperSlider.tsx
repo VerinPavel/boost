@@ -44,31 +44,31 @@ export default function SwiperSlider() {
             <SwiperSlide>
               <div className={styles.slide}>
                 <div className={styles.imgWrap}>
-                  <img src="../../../img/secondSlider/Frame19194.png" alt="" />
+                  <img src="/img/secondSlider/Frame19194.png" alt="" />
                 </div>
                 <div className={styles.imgWrap}>
-                  <img src="../../../img/secondSlider/Frame19195.png" alt="" />
+                  <img src="/img/secondSlider/Frame19195.png" alt="" />
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.slide}>
-                <div className={styles.imgWrap}>
-                  <img src="../../../img/secondSlider/Frame19194.png" alt="" />
+                <div className={styles.imgWrap}  style={{width: '100%'}}>
+                  <img src="/img/ourServices/branding/pills/1.png" alt="" />
                 </div>
-                <div className={styles.imgWrap}>
+                {/* <div className={styles.imgWrap}>
                   <img src="../../../img/secondSlider/Frame19195.png" alt="" />
-                </div>
+                </div> */}
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.slide}>
-                <div className={styles.imgWrap}>
-                  <img src="../../../img/secondSlider/Frame19194.png" alt="" />
+                <div className={styles.imgWrap} style={{width: '100%'}}>
+                  <img src="/img/secondSlider/casino.png" alt="" />
                 </div>
-                <div className={styles.imgWrap}>
-                  <img src="../../../img/secondSlider/Frame19195.png" alt="" />
-                </div>
+                {/* <div className={styles.imgWrap}>
+                  <img src="/img/secondSlider/Frame19195.png" alt="" />
+                </div> */}
               </div>
             </SwiperSlide>
           </Swiper>
@@ -109,12 +109,10 @@ export default function SwiperSlider() {
               </div>
               <div className={styles.secondSlide}>
                 <p className={styles.title}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Traffic Pills
                 </p>
                 <p className={styles.subtitle}>
-                  Amet dolores officiis accusamus ad ipsa ut tenetur quaerat,
-                  laudantium deserunt rem dolore animi iste voluptas fugit eaque
-                  unde soluta quis earum!
+                We start by getting to know our clients, their business goals, and their target audience. This involves conducting research, analyzing data, and discussing ideas with our clients to gain a deep understanding of their needs.
                 </p>
               </div>
             </SwiperSlide>
@@ -125,11 +123,9 @@ export default function SwiperSlider() {
                 <button className={styles.tag}>Visual Design</button>
               </div>
               <div className={styles.secondSlide}>
-                <p className={styles.title}>Lorem ipsum dolor </p>
+                <p className={styles.title}>Casino in Canada </p>
                 <p className={styles.subtitle}>
-                  Amet dolores officiis accusamus ad ipsa ut tenetur quaerat,
-                  laudantium deserunt rem dolore animi iste voluptas fugit eaque
-                  unde soluta quis earum!
+                We start by getting to know our clients, their business goals, and their target audience. This involves conducting research, analyzing data, and discussing ideas with our clients to gain a deep understanding of their needs.
                 </p>
               </div>
             </SwiperSlide>

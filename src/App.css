@@ -22,6 +22,7 @@ body {
 }
 
 .firstPart {
+  
   background-image: url(../img/backgorundFirst.png);
   background-size: cover;
   overflow: hidden;

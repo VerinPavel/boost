@@ -3,7 +3,7 @@ import Line from "../../ui/Line/Line";
 import { btns } from "./data";
 import styles from "./OurServices.module.scss";
 import Slider from "./SLider/Slider";
-import { brandingImg, blogersImg } from "./data";
+import { brandingImg, blogersImg, prodImg, aiProdImg } from "./data";
 
 export default function OurServices() {
   const [activeBtn, setActiveBtn] = useState(1);
@@ -14,8 +14,12 @@ export default function OurServices() {
     }
     if (id === 2) {
       return blogersImg;
-    } else {
-      return brandingImg;
+    }
+    if (id === 3) {
+      return prodImg;
+    }
+    if (id === 4) {
+      return aiProdImg
     }
   };
   return (

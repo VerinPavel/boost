@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import Line from "../../ui/Line/Line.tsx";
 import { useMediaQuery } from "@react-hook/media-query";
 import styles from "./Home.module.scss";
@@ -8,7 +10,7 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [state, setState] = useState(true);
   const Desktop = useMediaQuery("(min-width: 1280px)");
-  const fullHD = useMediaQuery("(max-width: 1920px) and (min-width:1280px)");
+  const fullHD = useMediaQuery("(min-width:1280px)");
   const data = () => {
     if (!Desktop) {
       return cardsMobile;
@@ -16,10 +18,31 @@ export default function Home() {
   };
 
   const array = data();
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   useEffect(() => {
     setState(false);
-    console.log("DOM загружен");
   }, []);
+
+  const handleScroll = () => {
+    // Проверяем, находится ли блок на экране при скролле
+    const section = document.getElementById("home");
+    const rect = section?.getBoundingClientRect();
+    
+    if (rect.top < window.innerHeight && rect.bottom >= 0) {
+      // Блок на экране
+      setState(false);
+    } else {
+      // Блок не на экране
+      setState(true);
+    }
+  };
 
   return (
     <section id="home" className={styles.home}>

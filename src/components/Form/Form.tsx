@@ -30,9 +30,9 @@ export default function Form({ setIsOpenModal }: FormProps) {
     { value: "option3", label: "Option 3" },
   ];
 
-  const handleSelect = (selectedOption: any) => {
-    console.log("Selected option:", selectedOption);
-  };
+  // const handleSelect = (selectedOption: any) => {
+  //   console.log("Selected option:", selectedOption);
+  // };
 
   return (
     <div id="contacts" className={styles.formSection}>
@@ -48,7 +48,7 @@ export default function Form({ setIsOpenModal }: FormProps) {
         </div>
         <div className={styles.row} style={{ gap: "54px" }}>
           <p>And I want to have more information about</p>
-          <Selector options={options} onSelect={handleSelect} />
+          <Selector options={options}  />
         </div>
         <div className={styles.row} style={{ gap: "40px" }}>
           <p>I would like some help in</p>
