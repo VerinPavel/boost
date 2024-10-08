@@ -135,7 +135,7 @@
   scale: 1.15;
   z-index: 100;
 
-  @media (max-width: 1023px) and (min-width: 0px) {
+  @media (max-width: 1024px) and (min-width: 0px) {
     scale: 0;
   }
 }

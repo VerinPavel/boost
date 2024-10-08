@@ -21,10 +21,7 @@ const mobileImg = [
     id: 3,
     img: "img/secondSlider/casino.png",
   },
-  // {
-  //   id: 4,
-  //   img: "img/secondSlider/Frame19194.png",
-  // },
+
 ];
 
 const mobileArray = [
@@ -35,21 +32,16 @@ const mobileArray = [
   },
   {
     id: 2,
-    title: "casino in canada",
+    title: "traffic pills",
     desc: "We start by getting to know our clients, their business goals, and their target audience. This involves conducting research, analyzing data, and discussing ideas with our clients to gain a deep understanding of their needs.",
   },
   {
     id: 3,
-    title: "traffic pills",
+    title: "casino in canada",
     desc: "We start by getting to know our clients, their business goals, and their target audience. This involves conducting research, analyzing data, and discussing ideas with our clients to gain a deep understanding of their needs.",
 
   },
-  {
-    id: 4,
-    title: "traffic pills",
-    desc: "We start by getting to know our clients, their business goals, and their target audience. This involves conducting research, analyzing data, and discussing ideas with our clients to gain a deep understanding of their needs.",
-
-  },
+ 
 ];
 
 export default function MobileSecondarySlider() {

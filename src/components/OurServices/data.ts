@@ -39,6 +39,9 @@ import colours from '/img/ourServices/prod/3.png'
 import car from '/img/ourServices/aiProd/1.png'
 import array from '/img/ourServices/aiProd/2.png'
 
+import small1 from '/img/ourServices/aiProd/small1.png'
+import small2 from '/img/ourServices/aiProd/small2.png'
+
 
 
 
@@ -113,20 +116,20 @@ export const prodImg: arrayImg[] = [
     {
         id: 1,
         firstImg: pourhomme ,
-        secondImg: finan2,
-        thirdImg: finan3,
+        secondImg: small1,
+        thirdImg: small2,
     },
     {
         id: 2,
         firstImg: soldout,
-        secondImg: ravena2,
-        thirdImg: ravena3,
+        secondImg: small1,
+        thirdImg: small2,
     },
     {
         id: 3,
         firstImg: colours,
-        secondImg: criptoinvest2,
-        thirdImg: criptoinvest3,
+        secondImg: small1,
+        thirdImg: small2,
     },
     
 ]
@@ -135,15 +138,15 @@ export const aiProdImg: arrayImg[] = [
     {
         id: 1,
         firstImg: car ,
-        secondImg: finan2,
-        thirdImg: finan3,
+        secondImg: small1,
+        thirdImg: small2,
         link: 'https://translate.yandex.ru/?utm_source=ntp_chrome',
     },
     {
         id: 2,
         firstImg: array,
-        secondImg: ravena2,
-        thirdImg: ravena3,
+        secondImg: small1,
+        thirdImg: small2,
         link: 'https://translate.yandex.ru/?utm_source=ntp_chrome',
     },
     

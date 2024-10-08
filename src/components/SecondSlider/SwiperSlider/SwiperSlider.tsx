@@ -54,7 +54,7 @@ export default function SwiperSlider() {
             <SwiperSlide>
               <div className={styles.slide}>
                 <div className={styles.imgWrap}  style={{width: '100%'}}>
-                  <img src="/img/ourServices/branding/pills/1.png" alt="" />
+                  <img src="/img/thirdSlider/1.png" alt="" />
                 </div>
                 {/* <div className={styles.imgWrap}>
                   <img src="../../../img/secondSlider/Frame19195.png" alt="" />

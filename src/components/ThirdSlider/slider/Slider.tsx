@@ -7,22 +7,29 @@ import "swiper/css/effect-fade";
 import "./Slider.css";
 import { useMediaQuery } from "@react-hook/media-query";
 
-const slides = [
-  // "../../../img/thirdSlider/2.png",
-  // "../../../img/thirdSlider/2.png",
-  // "../../../img/thirdSlider/2.png",
-  // "../../../img/thirdSlider/2.png",
-  '/img/ourServices/branding/adsAstra/1.png',
-  "../../../img/thirdSlider/2.png",
- '/img/ourServices/branding/notAlone/1.png',
- '/img/ourServices/branding/pills/1.png',
-
-
-
+const slides1 = [
+  "/img/thirdSlider/1.png",
+  "/img/thirdSlider/2.png",
+  "/img/thirdSlider/3.png",
+  '/img/ourServices/branding/notAlone/1.png',
+];
+const slides2 = [
+  "/img/thirdSlider/4.png",
+  "/img/thirdSlider/2.png",
+  "/img/thirdSlider/3.png",
+  '/img/ourServices/branding/notAlone/1.png',
 ];
 
 const Slider = () => {
-  const mobile = useMediaQuery("(max-width: 1023px) and (min-width: 0)");
+  const mobile = useMediaQuery("(max-width: 1024px) and (min-width: 0)");
+  const mobile2 = useMediaQuery("(max-width: 501px) and (min-width: 0)");
+
+  const slideses = () => {
+    if (mobile2) {return slides2} else return slides1
+  }
+
+  const slides = slideses()
+
 
   const spaceBetween = () => {
     if (!mobile) {
@@ -49,7 +56,7 @@ const Slider = () => {
         grabCursor={true}
         speed={1200}
       >
-        {slides.map((item: any, index) => (
+        {slides.map((item: any, index: any) => (
           <SwiperSlide key={index}>
             <img className={styles.img} src={item} alt="" />
           </SwiperSlide>
