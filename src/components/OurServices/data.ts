@@ -33,7 +33,6 @@ import ravena2 from '/img/ourServices/blogers/ravena/2.png'
 import ravena3 from '/img/ourServices/blogers/ravena/3.png'
 
 import pourhomme from '/img/ourServices/prod/1.png'
-import soldout from '/img/ourServices/prod/2.png'
 import colours from '/img/ourServices/prod/3.png'
 
 import car from '/img/ourServices/aiProd/1.png'
@@ -118,18 +117,14 @@ export const prodImg: arrayImg[] = [
         firstImg: pourhomme ,
         secondImg: small1,
         thirdImg: small2,
-    },
-    {
-        id: 2,
-        firstImg: soldout,
-        secondImg: small1,
-        thirdImg: small2,
+        link: 'https://vimeo.com/998118339',
     },
     {
         id: 3,
         firstImg: colours,
         secondImg: small1,
         thirdImg: small2,
+        link: 'https://vimeo.com/1002005966',
     },
     
 ]
@@ -140,14 +135,14 @@ export const aiProdImg: arrayImg[] = [
         firstImg: car ,
         secondImg: small1,
         thirdImg: small2,
-        link: 'https://translate.yandex.ru/?utm_source=ntp_chrome',
+        link: 'https://vimeo.com/992804179',
     },
     {
         id: 2,
         firstImg: array,
         secondImg: small1,
         thirdImg: small2,
-        link: 'https://translate.yandex.ru/?utm_source=ntp_chrome',
+        link: 'https://vimeo.com/998117966',
     },
     
     
