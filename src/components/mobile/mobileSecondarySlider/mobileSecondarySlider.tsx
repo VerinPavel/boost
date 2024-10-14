@@ -15,11 +15,11 @@ const mobileImg = [
   },
   {
     id: 2,
-    img: "img/ourServices/branding/pills/1.png",
+    img: "/img/secondSlider/desc.png",
   },
   {
     id: 3,
-    img: "img/secondSlider/casino.png",
+    img: "img/secondSlider/casino2.png",
   },
 
 ];

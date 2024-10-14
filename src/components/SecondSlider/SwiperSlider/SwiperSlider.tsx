@@ -53,22 +53,22 @@ export default function SwiperSlider() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.slide}>
-                <div className={styles.imgWrap}  style={{width: '100%'}}>
-                  <img src="/img/thirdSlider/1.png" alt="" />
+                <div className={styles.imgWrap}  >
+                  <img src="/img/secondSlider/desc.png" alt="" />
                 </div>
-                {/* <div className={styles.imgWrap}>
-                  <img src="../../../img/secondSlider/Frame19195.png" alt="" />
-                </div> */}
+                <div className={styles.imgWrap}>
+                  <img src="/img/secondSlider/desc1.png" alt="" />
+                </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.slide}>
-                <div className={styles.imgWrap} style={{width: '100%'}}>
-                  <img src="/img/secondSlider/casino.png" alt="" />
+                <div className={styles.imgWrap} >
+                  <img src="/img/secondSlider/casino2.png" alt="" />
                 </div>
-                {/* <div className={styles.imgWrap}>
-                  <img src="/img/secondSlider/Frame19195.png" alt="" />
-                </div> */}
+                <div className={styles.imgWrap}>
+                  <img src="/img/secondSlider/casino3.png" alt="" />
+                </div>
               </div>
             </SwiperSlide>
           </Swiper>

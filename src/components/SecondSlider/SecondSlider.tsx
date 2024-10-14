@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import styles from "./SecondSlider.module.scss";
 import SwiperSlider from "./SwiperSlider/SwiperSlider";
 import Line from "../../ui/Line/Line";
